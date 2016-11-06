@@ -12,6 +12,8 @@ from pytesseract import image_to_string
 import pytesseract
 import re
 
+print 'I love sandles'
+
 if os.name == "nt":
     pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files (x86)/Tesseract-OCR/tesseract'
 else:
