@@ -19,6 +19,8 @@ if os.name == "nt":
 else:
     pass
 
+print "mz added this here to test github"
+
 
 def find_stuff():
     no_players = 0
