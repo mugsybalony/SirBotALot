@@ -9,7 +9,13 @@ from picMatching import cards_on_screen
 import pyautogui
 from Monte_Carlo import run_sim
 from pytesseract import image_to_string
+import pytesseract
 import re
+
+if os.name == "nt":
+    pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files (x86)/Tesseract-OCR/tesseract'
+else:
+    pass
 
 
 def find_stuff():
@@ -17,8 +23,12 @@ def find_stuff():
     hand = []
     #take a screenshot
     #os.system("screencapture screen.png")
-    screen = 'screen.png'
-    cardpath = 'ps/backofcards2.png'
+
+    #screen = 'screen.png'
+    if os.name != "nt":
+        cardpath = 'ps/backofcards2.png'
+    else:
+        cardpath = 'ps/backcardswayne.png'
 
     #take a screenshot of the area where the baord is and find the board
     img = pyautogui.screenshot(region=(260, 219, 275, 50))
@@ -52,7 +62,8 @@ def find_stuff():
     print 'pot is %s ' %pot
 
     #find the number of opponents
-    screenshot1 = Image.open(screen)
+    #screenshot1 = Image.open(screen) - commented out 06/11
+    screenshot1 = pyautogui.screenshot('screen.png')
     screenshot = cv2.cvtColor(np.array(screenshot1), cv2.COLOR_BGR2RGB)
     card = Image.open(cardpath)
     coveredcard = cv2.cvtColor(np.array(card), cv2.COLOR_BGR2RGB)

@@ -57,7 +57,10 @@ def cards_on_screen(screenshotpath):
 
 def find_hidden_on_screen(template,screenshot):
     res = cv2.matchTemplate(screenshot, template, cv2.TM_SQDIFF_NORMED)
-    loc = np.where(res <= 0.1)
+    if os.name != "nt":
+        loc = np.where(res <= 0.1)
+    else:
+        loc = np.where(res <= 0.025)
 
     w, h = template.shape[1],template.shape[0]
 
