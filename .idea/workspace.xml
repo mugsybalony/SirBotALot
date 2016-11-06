@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9146b56b-7219-4ed7-90e9-dc2f5457f370" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cards.png" afterPath="$PROJECT_DIR$/cards.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hand.png" afterPath="$PROJECT_DIR$/hand.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pot.png" afterPath="$PROJECT_DIR$/pot.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screen.png" afterPath="$PROJECT_DIR$/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smallscreen.png" afterPath="$PROJECT_DIR$/smallscreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picMatching.py" afterPath="$PROJECT_DIR$/picMatching.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runpb.py" afterPath="$PROJECT_DIR$/runpb.py" />
     </list>
     <ignored path="SirBotALot.iws" />
@@ -32,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/runpb.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -415,7 +410,7 @@
     <entry file="file://$PROJECT_DIR$/runpb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
